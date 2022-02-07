@@ -10,7 +10,7 @@ from nd_to_json import nd_to_json
 PORT = 80
 REWARD = "lines" #or score
 PENALIZE_HEIGHT = False
-RENDER = True
+RENDER = False
 
 #if render, then not threaded
 THREADED = not RENDER
