@@ -6,11 +6,10 @@ import cv2
 from protopost import ProtoPost
 from nd_to_json import nd_to_json
 
-#TODO: env vars
-PORT = 80
-REWARD = "lines" #or score
-PENALIZE_HEIGHT = False
-RENDER = False
+PORT = int(os.getenv("PORT", 80))
+REWARD = os.getenv("PENALIZE_HEIGHT", "lines") #lines or score
+PENALIZE_HEIGHT = os.getenv("PENALIZE_HEIGHT", "true") == "true"
+RENDER = os.getenv("RENDER", "false") == "true"
 
 #if render, then not threaded
 THREADED = not RENDER

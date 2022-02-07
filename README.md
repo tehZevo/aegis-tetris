@@ -21,7 +21,7 @@ Action integers represent: 0=noop, 1=a, 2=b, 3=right, 4=left, 5=down
 - the env auto-resets
 
 ## TODO
-- env vars
+- document env vars
 - fix info dict (coerce values in info to json friendly types)
 - add route for reset
 - support saving videos using monitor
